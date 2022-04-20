@@ -3,17 +3,27 @@ package okulProjesi;
 public class Ogretmen {
   private  String ogretmenAdSoyad;
   private  int ogretmenYas;
+  private String ogretmenKimlikNo;
   private  String ogretmenSicilNo;
   private  String ogretmenBolum;
 
     public Ogretmen(){
 
     }
-    public Ogretmen(String ogretmenAdSoyad, int ogretmenYas, String ogretmenSicilNo, String ogretmenBolum) {
+    public Ogretmen(String ogretmenAdSoyad, int ogretmenYas,String ogretmenKimlikNo, String ogretmenSicilNo, String ogretmenBolum) {
         setOgretmenAdSoyad(ogretmenAdSoyad);
         setOgretmenYas(ogretmenYas);
+        this.ogretmenKimlikNo=ogretmenKimlikNo;
         this.ogretmenSicilNo = ogretmenSicilNo;
         this.ogretmenBolum = ogretmenBolum;
+    }
+
+    public String getOgretmenKimlikNo() {
+        return ogretmenKimlikNo;
+    }
+
+    public void setOgretmenKimlikNo(String ogretmenKimlikNo) {
+        this.ogretmenKimlikNo = ogretmenKimlikNo;
     }
 
     public String getOgretmenAdSoyad() {
